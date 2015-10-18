@@ -9,13 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.content.Intent;
+import android.widget.Toast;
 
-import com.parse.FindCallback;
-import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.List;
 
@@ -71,4 +71,37 @@ public class Gamecast extends AppCompatActivity {
         inflater.inflate(R.menu.menu_gamecast, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case R.id.action_follow:
+                onFollowClicked();
+                return true;
+            case R.id.action_signout:
+                onSignoutClicked();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    // [START onFollowClicked]
+    private void onFollowClicked() {
+        Intent in = new Intent(getApplicationContext(), Follow.class);
+        startActivity(in);
+    }
+    // [END onFollowClicked]
+
+    // [START onSignoutClicked]
+    private void onSignoutClicked() {
+        ParseUser.logOut();
+        Toast.makeText(getApplicationContext(), "Disconnected...", Toast.LENGTH_LONG).show();
+
+        Intent in = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(in);
+
+    }
+
 }
