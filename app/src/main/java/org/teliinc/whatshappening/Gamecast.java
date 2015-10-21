@@ -19,7 +19,7 @@ import com.parse.ParseQuery;
 
 import java.util.List;
 
-public class Gamecast extends AppCompatActivity {
+public class Gamecast extends BaseClass {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +34,19 @@ public class Gamecast extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Invite Friends to your broadcast", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                //TODO:Invoke implicit email to invite friends
+                // TODO : Invoke implicit email to invite friends
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // TODO : Create singleton Game Objecct
     }
 
     void saveGameInformation()
     {
         // TODO : Setting to include home team names
         try {
-            // TODO : Create GameCase Object
+            // TODO : Create GameCast Object
             /*
                 - Start Time
                 - Unique ID

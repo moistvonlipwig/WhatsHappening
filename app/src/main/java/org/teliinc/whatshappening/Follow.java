@@ -17,7 +17,7 @@ import com.parse.ParseQuery;
 
 import java.util.List;
 
-public class Follow extends AppCompatActivity {
+public class Follow extends BaseClass {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

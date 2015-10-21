@@ -13,8 +13,6 @@ import com.parse.ParseUser;
 
 public class MainActivity extends AppCompatActivity
 {
-
-    private Button new_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

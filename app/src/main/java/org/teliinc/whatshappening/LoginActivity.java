@@ -22,7 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.net.NetworkInfo;
 
-//TODO : Integrate ParseLoginUI
+// TODO : Integrate ParseLoginUI
 public class LoginActivity extends Activity implements OnClickListener{
     private TextView mEmailEditText;
     private TextView mPasswordEditText;

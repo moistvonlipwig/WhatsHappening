@@ -5,7 +5,7 @@
     <string name="title_text">Whats Happening</string>
     <string name="welcome">Login to begin sharing in \nthe moment!</string>
     <string name="dashboard_title">Dashboard</string>
-    <string name="dashboard_welcome">Select Broadcast to share your moments or Select Listen to follow a shared moment</string>
+    <string name="dashboard_welcome">Events in progress</string>
     <string name="dashboard_welcome1">Test1</string>
     <string name="dashboard_welcome2">Test2</string>
     <string name="dashboard_welcome3">Test3</string>
@@ -72,5 +72,9 @@
     <string name="action_gamecast">Gamecast</string>
     <string name="action_follow">Listen</string>
     <string name="action_signout">Sign Out</string>
+    <string name="action_about">About</string>
 
+    <string name="about_title">Whats Happening App</string>
+    <string name="about_message">Whats Happening lets you stream a game,your conscious and any other event to your freinds and family.</string>
+    <string name="about_ok">Lets make it happen!!</string>
 </resources>
